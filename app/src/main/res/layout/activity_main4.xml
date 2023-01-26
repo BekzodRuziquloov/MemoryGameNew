@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4"
+    android:background="@mipmap/img_1"
+    >
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="PROGRAMMER"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/student"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/img_9" />
+
+    <TextView
+        android:layout_below="@+id/imgg"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ism"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  Dilshodbek "
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/edit"
+        />
+
+    <TextView
+        android:background="@drawable/edit"
+        android:id="@+id/familiya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ism"
+        android:layout_marginTop="30dp"
+        android:hint="  Boltaboyev"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_below="@+id/familiya"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/guruh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="  me_8ight9ine"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/edit"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:layout_below="@+id/guruh"
+        android:id="@+id/as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="sorry in advance if there are errors in the program" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/as"
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+998911168899"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/edit"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/bacc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textColor="@color/white"
+       android:backgroundTint="#54CCCBCB"
+        />
+
+</RelativeLayout>

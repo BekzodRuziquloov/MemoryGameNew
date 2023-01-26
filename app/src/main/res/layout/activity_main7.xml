@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/img_1"
+    tools:context=".MainActivity7">
+
+    <TextView
+        app:layout_constraintBottom_toTopOf="@id/aaa"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="MY GAMES"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/aaa"
+        app:layout_constraintBottom_toTopOf="@id/math_Game"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#A4CED2D5"
+            >
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/erkak"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Written by Android Developer"
+                    android:textSize="30dp"
+                    android:textColor="@color/white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boltaboyev Dilshodbek"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+
+    </RadioGroup>
+
+        <RadioGroup
+            app:layout_constraintTop_toBottomOf="@+id/aaa"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/test_game"
+            android:id="@+id/math_Game"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/img_6"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Math Game"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                />
+        </RadioGroup>
+
+
+
+
+
+
+
+        <RadioGroup
+            app:layout_constraintBottom_toTopOf="@id/memory_game"
+            app:layout_constraintTop_toBottomOf="@+id/math_Game"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:id="@+id/test_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/img_7"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Test Game"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                />
+        </RadioGroup>
+
+
+
+
+
+
+        <RadioGroup
+            app:layout_constraintTop_toBottomOf="@id/test_game"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bott"
+            android:id="@+id/memory_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="80dp"
+            >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/img_8"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Memory Game"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                />
+        </RadioGroup>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@id/memory_game"
+        android:id="@+id/bott"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#A4CED2D5"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/home"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/man"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/nas" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/love"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RadioGroup>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
